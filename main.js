@@ -13,7 +13,7 @@ document.querySelector('#app').innerHTML = `
       <option value="anglais"> Anglais </option>
       <option value="allemand"> Allemand </option>
       <option value="espagnol"> Espagnol </option>
-      <option value="" selected> Select a language </option>
+      <option value="" selected> Sélectionne une langue </option>
     </select>
 
     <img src="/arrow.png" class="arrow-that-to-this">
@@ -23,7 +23,7 @@ document.querySelector('#app').innerHTML = `
       <option value="anglais"> Anglais </option>
       <option value="allemand"> Allemand </option>
       <option value="espagnol"> Espagnol </option>
-      <option value="" selected> Select a language </option>
+      <option value="" selected> Sélectionne une langue </option>
     </select>
   </div>
 
@@ -41,13 +41,13 @@ function goToTop() {
 
 function convert() {
   if (firstLanguageElement.value === '') {
-    alert('Please select a language');
+    alert('Sélectionne une langue');
     return;
   } else if (secondLanguageElement.value === '') {
-    alert('Please select a language');
+    alert('Sélectionne une langue');
     return;
   } else if (firstLanguageElement.value === secondLanguageElement.value) {
-    alert('Please do not select the same language');
+    alert('Ne sélectionne pas les mêmes languages');
     return;
   }
   const firstLanguage = firstLanguageElement.value;
